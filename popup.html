@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Text Humanizer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        h1 {
+            color: #4CAF50;
+        }
+        #output {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>AI Text Humanizer</h1>
+    <textarea id="input-text" rows="10" cols="30" placeholder="Enter text here..."></textarea><br>
+    <button id="process-btn">Process Text</button>
+    <div id="output"></div>
+    <script>
+        document.getElementById('process-btn').addEventListener('click', function() {
+            const inputText = document.getElementById('input-text').value;
+            // Here you would implement the logic to process the input text with your AI model.
+            document.getElementById('output').innerText = `Processed output for: ${inputText}`; // Example output
+        });
+    </script>
+</body>
+</html>
